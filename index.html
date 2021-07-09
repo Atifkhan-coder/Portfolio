@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PORTFOLIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+
+  <!-- Link Css Page -->
+  <link rel="stylesheet" href="style.css">
+    </head>
+        <style>
+            /* Remove the navbar's default margin-bottom and rounded borders */ 
+            .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            }
+            
+            /* Add a gray background color and some padding to the footer */
+            footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+            }
+        </style>
+    </head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Portfolio Website</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+  </div>
+</nav>
+<hr>
+
+<!-- BODY SECTION -->
+<section id="home">
+    <div class="container shadow p-3 mb-3 bg-white rounded">
+        <div class="card">
+            <div class="intro-wrapper">
+                <div class="left-column">
+                    <img id="profile_pic" src="images/Dennis.jpg">
+                </div>
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>What I Do</h3>
+                            <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="greeting-wrapper" style="text-align: center;">
+                <h1>Hi, I'm Atif Faheem khan</h1>
+                <h3 class="post">i am a <span class="typing-text">front end developer</span></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <div class="container shadow p-3 mb-3 bg-white rounded">
+        <div class="card">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More About me</h4>
+                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+                    <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+                    <hr>	
+
+                    <h4>Skills</h4>
+                    <p>Fullstack developer with primary focus on Laravel + Bootstrap:</p> 
+                    <hr>
+                    <!-- SKILLS -->
+                    <div class="container" style="display: table;">
+                        <div class="row">
+                            <div class="column"><b>Front End</b></div>
+                            <div class="column"><b>Back End</b></div>
+                          </div>
+                          <div class="row">
+                            <div class="column">Bootstrap</div>
+                            <div class="column">Laravel</div>
+                          </div>
+                          <div class="row">
+                            <div class="column">Html/Css</div>
+                            <div class="column">MySQL</div>
+                          </div>
+                    </div>
+                    <hr>
+                    <a target="_blank" href="resume.pdf"><button type="button" class="btn btn-info text-white">Download Resume</button></a>
+
+                </div>
+                
+                <div class="social-links">
+                    <img id="social_img" src="images/social.png">
+                    <h3>Find me on Social media</h3>
+                    <div class="row">
+                        <div class="col">
+                            <p><b>YouTube:</b> <a href="https://www.youtube.com/channel/UCAQjxKXfg4DMGtld3mrkMcQ"><p>Learn Skills</p></a>
+                        </div>
+                        <hr>
+                        <div class="col">
+                            <p><b>Facebook:</b> <a href="https://web.facebook.com/Learn-Skills-100130005688499"><p>Atif Faheem Khan</p></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- PORTFOLIO SECTION -->
+<section id="experience">
+    <div class=" container shadow p-3 mb-3 bg-white rounded">
+        <div  class="card">
+            <h4>Portfolio</h4>
+            <p>Fullstack developer with primary focus on Laravel + Bootstrap:</p> 
+            <div class="row">
+                <div class="column">
+                    <div class="card" style="width: 300px; height:350px;">
+                        <img class="thumbnail" src="images/membership site.png" style="height: 140px;">
+                        <h5>Products Sale System</h5>
+                        <p>Designed built & mantained a the lab managment system for University Final year project</p>
+                        <a href="post.html"><button type="button" class="btn btn-primary text-white w-100">Read more</button></a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card" style="width: 300px; height:350px;">
+                    <img class="thumbnail" src="images/ecom.png" style="height: 140px;">
+                    <h5>Notes Wallet</h5>
+                    <p>Designed built & mantained a the lab managment system for University Final year project</p>
+                    <a href="post.html"><button type="button" class="btn btn-primary text-white w-100">Read more</button></a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card" style="width: 300px; height:350px;">
+                    <img class="thumbnail" src="images/crime.png" style="height: 140px;">
+                    <h5>Criminal Record Register</h5>
+                    <p>Designed built & mantained a the lab managment system for University Final year project</p>
+                    <a href="post.html"><button type="button" class="btn btn-primary text-white w-100">Read more</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+    <div class="container shadow p-3 mb-3 bg-white rounded">
+        <div class="card">
+            <h2>Contact</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="uname">Username:</label>
+                        <input type="text" class="form-control"  placeholder="Enter username" name="uname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="subject" class="form-control" id="pwd" placeholder="Enter Subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="pwd" placeholder="Enter valid email" name="emial" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <input type="message" class="form-control" id="pwd" placeholder="Enter You Message" name="message" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- FOOTER SECTION -->
+<footer class="container-fluid text-center">
+    <p>Copyright: 2021 All right reserved</p>
+</footer>
+
+</body>
+</html>
